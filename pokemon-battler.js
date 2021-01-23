@@ -40,5 +40,18 @@ class Pokemon {
 }
 
 class Trainer {
+    constructor(name, store) {
+        this.name = name;
+        this.store = store;
+        this.quantity = 0;
+        this.myPokemon = {};
+    }
+    catch(testPokemon) {
+        this.quantity++;
+        return (this.myPokemon[this.quantity] = testPokemon);
+    }
+}
+
+class Battle {
     
 }
